@@ -37,3 +37,11 @@ p
 @src/main/java/org/example/exception/PhotoRetrievalException.java,7\3\7385ce0dd44dc7a057b1483938efb6faae7ab627
 p
 @src/main/java/org/example/exception/InternalSercerException.java,d\1\d1c42802cfc7e168d2cf886b69d9a0fcee45ec7b
+k
+;src/main/java/org/example/controller/BookingController.java,1\a\1a178dbd6562b4c1065a00d0d4c78571e7c3fa25
+k
+;src/main/java/org/example/repository/BookingRepository.java,1\4\14ec7cdd7d60e23bad3572d765e62a8b3ecced76
+f
+6src/main/java/org/example/service/IBookingService.java,d\3\d304378e89d1093773115c45dd15eda725757487
+w
+Gsrc/main/java/org/example/exception/InvalidBookingRequestException.java,e\c\ec375a9d0d7c05c6c55e3b65546bfc0dd29c5c40
