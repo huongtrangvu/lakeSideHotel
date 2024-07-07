@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import moment from "moment";
 import { useState } from "react";
 import { Form, FormControl, Button } from "react-bootstrap";
-import BookingSummary from "./BookingSummary";
+import BookingSummary from "./BookingSumary";
 import { bookRoom, getRoomById } from "../utils/ApiFunctions";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -141,7 +141,6 @@ const BookingForm = () => {
 										value={booking.guestEmail}
 										placeholder="Enter your email"
 										onChange={handleInputChange}
-										disabled
 									/>
 									<Form.Control.Feedback type="invalid">
 										Please enter a valid email address.

@@ -1,5 +1,6 @@
 
-˜	java:S116"VRename this field "NumOfAdults" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þøåó8ýá“½‡2J$9c54e39d-a35f-4cdd-a796-302ef2f015a9
-™	java:S116"XRename this field "NumOfChildren" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ÙÑh8þá“½‡2J$1ea962b0-4991-4f72-b99f-4015919defa8
+˜	java:S116"VRename this field "NumOfAdults" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þøåó8ýá“½‡2J$899c7acd-c400-4791-a1ce-620d2cca99da
+™	java:S116"XRename this field "NumOfChildren" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ÙÑh8þá“½‡2J$839ee092-5997-467f-bef7-77ccba80b8ee
+„	java:S107o"BConstructor has 10 parameters, which is greater than 7 authorized.(Ê±ô·8Œð†Ýˆ2J$34097aa0-ddbd-46ae-b044-606a5ad56906
 y
-java:S1128"7Remove this unused import 'jakarta.persistence.Column'.(Ó‰ÙE8ýÏ…À‡2J$d4b350a0-7f1e-42c7-8ab9-23ea0e714f92
+java:S1128"7Remove this unused import 'jakarta.persistence.Column'.(Ó‰ÙE8ýÏ…À‡2J$95d031d5-f328-4125-bfb1-1c6421649a3e

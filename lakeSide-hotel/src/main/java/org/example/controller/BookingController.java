@@ -31,6 +31,7 @@ public class BookingController {
             BookingResponse bookingResponse = getBookingResponse(booking);
             bookingResponses.add(bookingResponse);
         }
+        System.out.println(bookingResponses.get(0).getBookingConfirmationCode());
         return ResponseEntity.ok(bookingResponses);
     }
 

@@ -1,13 +1,17 @@
 package org.example.response;
 
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.util.Base64;
 import java.util.List;
 @Data
 @NoArgsConstructor
+@Getter
+@Setter
 public class RoomResponse {
     private Long id;
 

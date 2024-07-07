@@ -2,6 +2,7 @@ package org.example.service;
 
 import lombok.RequiredArgsConstructor;
 import org.example.exception.InvalidBookingRequestException;
+import org.example.exception.ResourceNotFoundException;
 import org.example.model.BookedRoom;
 import org.example.model.Room;
 import org.example.repository.BookingRepository;
@@ -65,7 +66,7 @@ public class BookingService implements IBookingService{
 
     @Override
     public BookedRoom findByBookingConfirmationCode(String confirmationCode) {
-        return bookingRepository.findByBookingConfirmationCode(confirmationCode);
+        return bookingRepository.findByBookingConfirmationCode(confirmationCode).orElseThrow(()->new ResourceNotFoundException("No booking found width booking code:"+confirmationCode));
     }
 
     @Override

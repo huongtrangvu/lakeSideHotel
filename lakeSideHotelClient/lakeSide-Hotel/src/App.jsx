@@ -14,6 +14,11 @@ import NavBar from "./components/layout/NavBar";
 import Footer from "./components/layout/Footer";
 import RoomListing from "./components/room/RoomListing";
 import Admin from "./components/admin/Admin";
+import BookingSuccess from "./components/bookings/BookingSuccess";
+import BookingForm from "./components/bookings/BookingForm";
+import Checkout from "./components/bookings/Checkout";
+import Bookings from "./components/bookings/Bookings";
+import FindBooking from "./components/bookings/FindBooking";
 
 function App() {
 	return (
@@ -28,6 +33,10 @@ function App() {
 						<Route path="/add-room" element={<AddRoom />} />
 						<Route path="/browse-all-room" element={<RoomListing />} />
 						<Route path="/admin" element={<Admin />} />
+						<Route path="/booking-success" element={<BookingSuccess />} />
+						<Route path="/book-room/:roomId" element={<Checkout />} />
+						<Route path="/existing-bookings" element={<Bookings />} />
+						<Route path="/find-booking" element={<FindBooking />} />
 					</Routes>
 				</Router>
 				<Footer />

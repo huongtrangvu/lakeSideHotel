@@ -1,12 +1,6 @@
 
-Y
-java:S1854H"<Remove this useless assignment to local variable "bookings".(‹î‚Ó8ÇÍ’ƒˆ2
-J
-java:S1481H"-Remove this unused "bookings" local variable.(‹î‚Ó8ÈÍ’ƒˆ2
-X	java:S125M"<This block of commented-out lines of code should be removed.(’Í¤8ÉÍ’ƒˆ2
-c
-java:S1128	"ARemove this unused import 'org.example.response.BookingResponse'.(‘¸£Áúÿÿÿÿ8áÛ‹ˆ2
-b
-java:S1128"@Remove this unused import 'org.example.service.RoomServiceImpl'.(–ÔÄÇùÿÿÿÿ8âÛ‹ˆ2
-a
-java:S1128"DRemove this unused import 'org.springframework.http.HttpStatusCode'.(®å™Õ8âÛ‹ˆ2
+
+java:S1854`"<Remove this useless assignment to local variable "bookings".(‹î‚Ó8‘¼Øñˆ2J$fc5682d8-0a16-41d4-b10c-82edc4cd53a1
+p
+java:S1481`"-Remove this unused "bookings" local variable.(‹î‚Ó8’¼Øñˆ2J$4b4c327f-e535-48ee-bdc0-d44432b6359c
+~	java:S125e"<This block of commented-out lines of code should be removed.(’Í¤8“¼Øñˆ2J$58b23903-75e5-4a5d-8b08-f551f9a4cb2d

@@ -53,4 +53,72 @@ public class BookedRoom {
     public void setBookingConfirmationCode(String bookingConfirmationCode) {
         this.bookingConfirmationCode = bookingConfirmationCode;
     }
+
+    public Room getRoom() {
+        return room;
+    }
+
+    public void setRoom(Room room) {
+        this.room = room;
+    }
+
+    public Long getBookingId() {
+        return bookingId;
+    }
+
+    public void setBookingId(Long bookingId) {
+        this.bookingId = bookingId;
+    }
+
+    public LocalDate getCheckInDate() {
+        return checkInDate;
+    }
+
+    public void setCheckInDate(LocalDate checkInDate) {
+        this.checkInDate = checkInDate;
+    }
+
+    public LocalDate getCheckOutDate() {
+        return checkOutDate;
+    }
+
+    public void setCheckOutDate(LocalDate checkOutDate) {
+        this.checkOutDate = checkOutDate;
+    }
+
+    public String getGuestFullName() {
+        return guestFullName;
+    }
+
+    public void setGuestFullName(String guestFullName) {
+        this.guestFullName = guestFullName;
+    }
+
+    public String getGuestEmail() {
+        return guestEmail;
+    }
+
+    public void setGuestEmail(String guestEmail) {
+        this.guestEmail = guestEmail;
+    }
+
+    public int getNumOfAdults() {
+        return NumOfAdults;
+    }
+
+    public int getNumOfChildren() {
+        return NumOfChildren;
+    }
+
+    public int getTotalNumOfGuest() {
+        return totalNumOfGuest;
+    }
+
+    public void setTotalNumOfGuest(int totalNumOfGuest) {
+        this.totalNumOfGuest = totalNumOfGuest;
+    }
+
+    public String getBookingConfirmationCode() {
+        return bookingConfirmationCode;
+    }
 }
