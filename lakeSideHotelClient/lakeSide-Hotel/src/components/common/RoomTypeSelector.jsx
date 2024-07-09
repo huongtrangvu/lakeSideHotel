@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { getRoomType } from "../utils/ApiFunctions";
+import { getRoomTypes } from "../utils/ApiFunctions";
 
 const RoomTypeSelector = ({ handleRoomInputChange, newRoom }) => {
 	const [roomTypes, setRoomTypes] = useState([""]);
 	const [showNewRoomTypeInput, setShowNewRoomTypesInput] = useState(false);
 	const [newRoomTypes, setNewRoomTypes] = useState("");
 	useEffect(() => {
-		getRoomType().then((data) => {
+		getRoomTypes().then((data) => {
 			setRoomTypes(data);
 		});
 	}, []);
