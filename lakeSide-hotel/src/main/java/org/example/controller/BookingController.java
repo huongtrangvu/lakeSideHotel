@@ -1,6 +1,5 @@
 package org.example.controller;
 
-import lombok.RequiredArgsConstructor;
 import org.example.exception.InvalidBookingRequestException;
 import org.example.exception.ResourceNotFoundException;
 import org.example.model.BookedRoom;
@@ -20,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/bookings")
 public class BookingController {
