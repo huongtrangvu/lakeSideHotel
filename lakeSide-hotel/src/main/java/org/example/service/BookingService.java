@@ -6,16 +6,22 @@ import org.example.exception.ResourceNotFoundException;
 import org.example.model.BookedRoom;
 import org.example.model.Room;
 import org.example.repository.BookingRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
-@RequiredArgsConstructor
+
 public class BookingService implements IBookingService{
     private final BookingRepository bookingRepository;
     private final IRoomService roomService;
     public List<BookedRoom> getAllBookingsByRoomId(Long roomId) {
         return bookingRepository.findByRoomId(roomId);
+    }
+    @Autowired
+    public BookingService(BookingRepository bookingRepository, IRoomService roomService) {
+        this.bookingRepository = bookingRepository;
+        this.roomService = roomService;
     }
 
     @Override

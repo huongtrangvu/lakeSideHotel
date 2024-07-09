@@ -1,19 +1,17 @@
 package org.example.controller;
 
-import lombok.RequiredArgsConstructor;
 import org.apache.tomcat.util.codec.binary.Base64;
 import org.example.exception.ResourceNotFoundException;
 import org.example.model.BookedRoom;
 import org.example.model.Room;
 import org.example.exception.PhotoRetrievalException;
-import org.example.response.BookingResponse;
 import org.example.response.RoomResponse;
 import org.example.service.BookingService;
 import org.example.service.IRoomService;
 import org.example.service.RoomServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -30,11 +28,16 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:5173")
 @RestController
-@RequiredArgsConstructor
+
 @RequestMapping("/rooms")
 public class RoomController {
     private final IRoomService roomService;
     private final BookingService bookingService;
+    @Autowired
+    public RoomController(BookingService bookingService, RoomServiceImpl roomService) {
+        this.bookingService = bookingService;
+        this.roomService = roomService;
+    }
     @PostMapping("/add/new-room")
     public ResponseEntity<RoomResponse> addNewRoom(@RequestParam("photo") MultipartFile photo,
                                                    @RequestParam("roomType") String roomType,
@@ -73,7 +76,7 @@ public class RoomController {
 
     public ResponseEntity<List<RoomResponse>> getAvailableRooms(@RequestParam("checkInDate") @DateTimeFormat(iso=DateTimeFormat.ISO.DATE) LocalDate checkInDate,
                                                                 @RequestParam("checkOutDate") @DateTimeFormat(iso=DateTimeFormat.ISO.DATE)  LocalDate checkOutDate,
-                                                                @RequestParam("roomType") String roomType) {
+                                                                @RequestParam("roomType") String roomType) throws SQLException {
         List<Room> availableRooms = roomService.getAvailableRooms(checkInDate, checkOutDate, roomType);
         List<RoomResponse> roomResponses = new ArrayList<>();
         for(Room room:availableRooms) {

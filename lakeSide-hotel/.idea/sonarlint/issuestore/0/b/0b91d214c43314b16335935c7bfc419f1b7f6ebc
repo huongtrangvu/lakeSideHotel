@@ -1,0 +1,15 @@
+
+‹
+java:S3655N"HCall "user.isPresent()" or "!user.isEmpty()" before accessing the value.(ÌÌÂ·8ë¶ß‚‰2J$f393318d-7213-4512-b109-c9eed8fdce03
+
+java:S3655X"HCall "role.isPresent()" or "!role.isEmpty()" before accessing the value.(’ığ‹øÿÿÿÿ8ë¶ß‚‰2J$29a24570-4b71-46f3-ae28-14ddc92bf4d8
+‹
+java:S3655I"HCall "role.isPresent()" or "!role.isEmpty()" before accessing the value.(ÑíŞã8ë¶ß‚‰2J$d0f33db9-63bd-44ba-9b4a-f49cd0300d05
+“
+java:S36556"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(åĞÏÓ8ê¶ß‚‰2J$997de9fe-80a8-4b4b-90a0-851bc70ffacc
+
+java:S3655="HCall "user.isPresent()" or "!user.isEmpty()" before accessing the value.(ÍıŸ¹ûÿÿÿÿ8ë¶ß‚‰2J$a397d906-5024-4b85-9a58-1af2efad12df
+j
+java:S3655Q"HCall "user.isPresent()" or "!user.isEmpty()" before accessing the value.(´ñìšşÿÿÿÿ8Ûø—™‰2
+]
+java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8éø—™‰2

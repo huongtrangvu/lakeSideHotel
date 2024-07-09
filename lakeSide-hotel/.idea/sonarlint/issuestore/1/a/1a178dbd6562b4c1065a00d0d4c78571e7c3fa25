@@ -1,8 +1,10 @@
 
-p
-java:S3655C"NCall "theRoom.isPresent()" or "!theRoom.isEmpty()" before accessing the value.(¾ó²şÿÿÿÿ8ÉÜäğˆ2
-L	java:S106""+Replace this use of System.out by a logger.(÷‹îúÿÿÿÿ8ĞÜäğˆ2
-C
-java:S1452("&Remove usage of generic wildcard type.(Õ´˜Ç8ÑÜäğˆ2
-C
-java:S14523"&Remove usage of generic wildcard type.(ûË¨ò8ÓÜäğˆ2
+–
+java:S3655L"NCall "theRoom.isPresent()" or "!theRoom.isEmpty()" before accessing the value.(¾ó²şÿÿÿÿ8œ÷ÀŒ‰2J$76bf48c7-9e95-4fbe-9c8c-3eb82485f86f
+r	java:S106+"+Replace this use of System.out by a logger.(÷‹îúÿÿÿÿ8®÷ÀŒ‰2J$f91366e4-9fea-4e05-bff6-be32e0152a94
+i
+java:S14521"&Remove usage of generic wildcard type.(Õ´˜Ç8²÷ÀŒ‰2J$fdcb6320-ff8c-48d0-8375-2b7fdac857a5
+i
+java:S1452<"&Remove usage of generic wildcard type.(ûË¨ò8¶÷ÀŒ‰2J$ae6be64a-0e9e-4505-93cd-fef89232ce4c
+ƒ
+java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8¿÷ÀŒ‰2J$c6a67d84-d021-47dc-9cda-393acc07ac4e

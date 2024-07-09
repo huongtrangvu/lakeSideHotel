@@ -1,5 +1,7 @@
 
-r
-java:S3655["PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(×ï¦€ÿÿÿÿÿ8šŸÀ™ˆ2
-C
-java:S11688"&Return an empty array instead of null.(¥¹ï8å¡À™ˆ2
+˜
+java:S3655^"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(×ï¦€ÿÿÿÿÿ8¼¢çñˆ2J$d2d47164-a1e7-47ff-988f-dfa1efd9dd7d
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8£¯àŒ‰2J$cd36c8bb-d6dd-4dcf-a0b8-f717bb0854b9
+i
+java:S1168;"&Return an empty array instead of null.(¥¹ï8Ç¢çñˆ2J$6351ef87-1923-4481-95f4-f468e0726d5b

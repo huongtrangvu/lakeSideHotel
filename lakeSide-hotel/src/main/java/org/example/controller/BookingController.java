@@ -7,8 +7,11 @@ import org.example.model.BookedRoom;
 import org.example.model.Room;
 import org.example.response.BookingResponse;
 import org.example.response.RoomResponse;
+import org.example.service.BookingService;
 import org.example.service.IBookingService;
 import org.example.service.IRoomService;
+import org.example.service.RoomServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,12 +20,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@RequiredArgsConstructor
+
 @RestController
 @RequestMapping("/bookings")
 public class BookingController {
     private final IBookingService bookingService;
     private final IRoomService roomService;
+
+    @Autowired
+    public BookingController(BookingService bookingService, RoomServiceImpl roomService) {
+        this.bookingService = bookingService;
+        this.roomService = roomService;
+    }
     @GetMapping("/all-bookings")
     public ResponseEntity<List<BookingResponse>> getAllBooking(){
         List<BookedRoom> bookings = bookingService.getAllBookings();
