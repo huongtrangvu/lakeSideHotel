@@ -1,8 +1,7 @@
 
-–
-java:S3655K"NCall "theRoom.isPresent()" or "!theRoom.isEmpty()" before accessing the value.(¾ó²şÿÿÿÿ8œ÷ÀŒ‰2J$11176244-ca14-4a22-83e7-6e3e24c6a26b
-r	java:S106*"+Replace this use of System.out by a logger.(÷‹îúÿÿÿÿ8®÷ÀŒ‰2J$7aab5dc8-390c-4c15-a3c0-9ec750c14bbe
+“
+java:S3655X"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(Ïòé8¯Èë‰2J$c4b25127-f04c-4a86-b479-c75a7b368028
+n
+java:S14520"&Remove usage of generic wildcard type.(èË¦Úøÿÿÿÿ8¹Èë‰2J$f7cf4f95-70b0-4ad3-af30-e06eca6d1563
 i
-java:S14520"&Remove usage of generic wildcard type.(Õ´˜Ç8²÷ÀŒ‰2J$d999a5e4-80e9-40ff-b985-fc076fdfebea
-i
-java:S1452;"&Remove usage of generic wildcard type.(ûË¨ò8¶÷ÀŒ‰2J$aba1689d-7fb7-4f0d-a1a5-0e51e7bf28d2
+java:S1452="&Remove usage of generic wildcard type.(Õ´˜Ç8»Èë‰2J$e3929872-455c-495c-98f5-12c939d10209

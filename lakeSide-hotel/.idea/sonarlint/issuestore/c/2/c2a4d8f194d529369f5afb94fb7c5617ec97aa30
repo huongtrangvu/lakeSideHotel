@@ -1,9 +1,5 @@
 
 i
-java:S1452'"&Remove usage of generic wildcard type.(®¸‘´8àùÖ™‰2J$e1ea13a8-0c05-4fe9-8f93-bc6608008091
+java:S1452%"&Remove usage of generic wildcard type.(®¸‘´8àùÖ™‰2J$fb11e8bd-63ca-40f0-8244-8b7ee4edfba4
 i
-java:S14522"&Remove usage of generic wildcard type.(ª¯è¶8çùÖ™‰2J$5136a59a-5b3b-452c-997a-89c28213a169
-ƒ
-java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8ôùÖ™‰2J$563bceae-e4d1-458d-a411-d1dc27b26e01
-‡
-java:S1128"DRemove this unused import 'org.springframework.http.HttpStatusCode'.(®å™Õ8ôùÖ™‰2J$196a7506-e013-43e4-8ffc-dab98a59a252
+java:S14520"&Remove usage of generic wildcard type.(ª¯è¶8çùÖ™‰2J$7efd0990-a4f9-4595-b02c-5f4aa5e7aad6

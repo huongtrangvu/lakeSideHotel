@@ -26,6 +26,7 @@ const Login = () => {
 			const token = success.token;
 			auth.handleLogin(token);
 			navigate(redirectUrl, { replace: true });
+			console.log(login.email + " " + token);
 		} else {
 			setErrorMessage("Invalid username or password. Please try again.");
 		}

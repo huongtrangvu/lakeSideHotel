@@ -1,6 +1,5 @@
 package org.example.controller;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.example.exception.UserAlreadyExistsException;
 import org.example.model.User;
 import org.example.request.LoginRequest;
@@ -10,7 +9,6 @@ import org.example.security.user.HotelUserDetails;
 import org.example.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

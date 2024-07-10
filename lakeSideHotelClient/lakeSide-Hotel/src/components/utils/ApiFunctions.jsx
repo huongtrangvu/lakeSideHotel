@@ -202,6 +202,7 @@ export async function getUser(userId, token) {
 		const response = await api.get(`/users/${userId}`, {
 			headers: getHeader(),
 		});
+		console.log(response.data);
 		return response.data;
 	} catch (error) {
 		throw error;
