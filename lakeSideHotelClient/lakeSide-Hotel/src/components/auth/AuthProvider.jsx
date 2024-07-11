@@ -1,22 +1,34 @@
 import React, { createContext, useState, useContext } from "react";
-import * as jwt_decode from "jwt-decode";
+import { getUser } from "../utils/ApiFunctions";
 
 export const AuthContext = createContext({
 	user: null,
-	handleLogin: (token) => {},
+	handleLogin: (id, token) => {},
 	handleLogout: () => {},
 });
 
 export const AuthProvider = ({ children }) => {
-	const [user, setUser] = useState(null);
+	const [user, setUser] = useState({
+		id: "",
+		email: "",
+		firstName: "",
+		lastName: "",
+		roles: [],
+	});
 
-	const handleLogin = (token) => {
-		const decodedUser = jwt_decode(token);
-		console.log("hehe");
-		localStorage.setItem("userId", decodedUser.sub);
-		localStorage.setItem("userRole", decodedUser.roles);
+	const handleLogin = async (email, token) => {
 		localStorage.setItem("token", token);
-		setUser(decodedUser);
+		try {
+			// Fetch user data by email
+			const userData = await getUser(email, token);
+			setUser(userData);
+
+			// Save user data to localStorage
+			localStorage.setItem("userId", email);
+			localStorage.setItem("userRole", JSON.stringify(userData.roles));
+		} catch (error) {
+			console.error("Failed to fetch user data:", error);
+		}
 	};
 
 	const handleLogout = () => {
@@ -36,4 +48,3 @@ export const AuthProvider = ({ children }) => {
 export const useAuth = () => {
 	return useContext(AuthContext);
 };
-export default AuthProvider;

@@ -8,9 +8,16 @@ const NavBar = () => {
 	const handleAccountClick = () => {
 		setShowAccount(!showAccount);
 	};
-
+	//const [roleName, setRoleName] = useState([]);
+	let roleNames = [];
 	const isLoggedIn = localStorage.getItem("token");
 	const userRole = localStorage.getItem("userRole");
+	if (userRole) {
+		const userRoleArray = JSON.parse(userRole);
+
+		roleNames = userRoleArray.map((role) => role.name);
+		console.log(roleNames);
+	}
 
 	return (
 		<nav className="navbar navbar-expand-lg bg-body-tertiary px-5 shadow mt-5 sticky-top">
@@ -43,7 +50,7 @@ const NavBar = () => {
 							</NavLink>
 						</li>
 
-						{isLoggedIn && userRole === "ROLE_ADMIN" && (
+						{isLoggedIn && roleNames.includes("ROLE_ADMIN") && (
 							<li className="nav-item">
 								<NavLink className="nav-link" aria-current="page" to={"/admin"}>
 									Admin

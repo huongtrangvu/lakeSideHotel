@@ -35,7 +35,9 @@ const Profile = () => {
 	useEffect(() => {
 		const fetchUser = async () => {
 			try {
+				console.log(userId + " " + token);
 				const userData = await getUser(userId, token);
+				console.log(userData);
 				setUser(userData);
 			} catch (error) {
 				console.error(error);

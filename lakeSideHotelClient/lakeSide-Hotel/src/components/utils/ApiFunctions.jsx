@@ -197,9 +197,9 @@ export async function deleteUser(userId) {
 }
 
 /* This is the function to get a single user */
-export async function getUser(userId, token) {
+export async function getUser(email, token) {
 	try {
-		const response = await api.get(`/users/${userId}`, {
+		const response = await api.get(`/users/${email}`, {
 			headers: getHeader(),
 		});
 		console.log(response.data);
